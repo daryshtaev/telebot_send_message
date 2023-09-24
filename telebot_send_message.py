@@ -2,7 +2,7 @@
 # ver. 1.0.0
 
 import telebot
-def bot_send_message(chat_id, msg='', parse_mode=None, msg_size_limit=4096):
+def bot_send_message(bot_token, chat_id, msg='', parse_mode=None, msg_size_limit=4096):
     bot = telebot.TeleBot(bot_token);
     # import telebot (pyTelegramBotAPI)
     # Если длина текста сообщения превышает допустимый лимит (4096 символов), тогда разбиваем текст на несколько сообщений.
